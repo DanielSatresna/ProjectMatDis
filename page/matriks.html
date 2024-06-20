@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Calculator</title>
+    <link rel="stylesheet" href="/css/matriks.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Matrix Calculator</h1>
+        <label for="matrixSize">Masukkan ukuran matriks (misalnya 3 untuk matriks 3x3):</label>
+        <input type="number" id="matrixSize" min="1" value="2">
+        <button onclick="inputMatrices()">Submit</button>
+
+        <div id="matrixInputs" style="display: none;">
+            <h3>Matriks A</h3>
+            <div id="matrixA"></div>
+            <h3>Matriks B</h3>
+            <div id="matrixB"></div>
+            <h3><button onclick="addMatrices()">Hitung Penjumlahan</button></h3>
+        </div>
+
+        <h3>Hasil Penjumlahan Matriks A dan B</h3>
+        <div id="resultMatrix"></div>
+    </div>
+
+    <script src="/script/matriks.js"></script>
+</body>
+</html>
